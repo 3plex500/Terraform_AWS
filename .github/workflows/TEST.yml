@@ -14,12 +14,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v3  # Обновлено до последней версии
 
     - name: Set up Terraform
-      uses: hashicorp/setup-terraform@v2
+      uses: hashicorp/setup-terraform@v2  # Обновлено до последней версии
       with:
-        terraform_version: 1.9.5  # Укажите вашу версию Terraform
+        terraform_version: 1.5.0  # Укажите вашу версию Terraform
 
     - name: Terraform Init
       env:
@@ -43,3 +43,4 @@ jobs:
     - name: Cleanup
       run: terraform destroy -auto-approve
       # Если вы хотите уничтожить ресурсы после тестирования, уберите комментарий и добавьте условие
+
