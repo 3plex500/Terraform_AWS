@@ -1,6 +1,7 @@
 # Настройка провайдера AWS
 provider "aws" {
   region = "us-east-1"
+
 }
 
 # Настройка Terraform backend для хранения состояния
